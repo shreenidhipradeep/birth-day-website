@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Memories With Yahya 📸</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Progress Bar (4 of 7) -->
+  <header class="progress-header">
+    <span class="progress-step-text">Surprise 4 of 7 • Our Memories</span>
+    <div class="progress-dots">
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot active"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+    </div>
+  </header>
+
+  <!-- Page Content (Fits completely on screen, no vertical scrolling needed) -->
+  <main class="page-wrapper" style="padding-top: 55px; padding-bottom: 50px;">
+    <div class="content-container" style="max-width: 580px;">
+      <span class="tag-badge">📸 Memory Reel</span>
+      <h1 class="title-display" style="font-size: clamp(1.8rem, 4.5vw, 2.6rem); margin-bottom: 6px;">Moments We Won't Forget</h1>
+      <p class="subtitle" style="margin-bottom: 12px; font-size: 0.95rem;">
+        Sit back and watch our memories unfold one by one ✨ (Tap any photo to zoom!)
+      </p>
+
+      <!-- Auto-Moving Showcase Container -->
+      <div class="showcase-wrapper" id="showcase-wrapper">
+        <!-- Stage holding the active moving Polaroid card -->
+        <div class="showcase-stage" id="showcase-stage">
+          <!-- Populated dynamically with auto-moving cards -->
+        </div>
+
+        <!-- Timer Progress Line -->
+        <div class="showcase-timer-bar">
+          <div class="showcase-timer-fill" id="showcase-timer-fill"></div>
+        </div>
+
+        <!-- Interactive Controls -->
+        <div class="showcase-controls">
+          <button id="showcase-prev-btn" class="showcase-ctrl-btn showcase-arrow-btn" type="button" aria-label="Previous Memory" title="Previous">
+            ❮
+          </button>
+          <button id="showcase-play-btn" class="showcase-ctrl-btn" type="button" aria-label="Toggle Auto-Play">
+            <span id="showcase-play-icon">⏸</span>
+            <span id="showcase-play-text">Auto-Playing</span>
+          </button>
+          <button id="showcase-next-btn" class="showcase-ctrl-btn showcase-arrow-btn" type="button" aria-label="Next Memory" title="Next">
+            ❯
+          </button>
+        </div>
+
+        <!-- Dots Indicator (12 dots) -->
+        <div class="showcase-dots" id="showcase-dots"></div>
+      </div>
+
+      <!-- Navigation to Next Page -->
+      <div style="margin-top: 15px;">
+        <a href="letter.html" class="btn-primary">
+          Next: A Letter For You 💌 ➜
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">✕</button>
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous">❮</button>
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next">❯</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Zoomed Memory">
+      <div class="lightbox-caption-box">
+        <span class="lightbox-caption-text" id="lightbox-caption"></span>
+        <span class="showcase-counter" id="lightbox-counter"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Controller Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Wish, Yahya! 🎂</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Progress Bar (6 of 7) -->
+  <header class="progress-header">
+    <span class="progress-step-text">Surprise 6 of 7 • Make a Wish</span>
+    <div class="progress-dots">
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot completed"></span>
+      <span class="progress-dot active"></span>
+      <span class="progress-dot"></span>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="page-wrapper">
+    <div class="content-container">
+      <div class="glass-card">
+        <span class="tag-badge">🎂 The Birthday Ritual</span>
+        <h1 class="title-display">Make a Wish, <span class="friend-name">Yahya</span>!</h1>
+        <p class="subtitle">A birthday is never complete without a birthday cake. Light your candles, make a silent wish, and blow them out!</p>
+
+        <!-- Interactive Birthday Cake -->
+        <div class="cake-scene">
+          <div class="cake-container">
+            <!-- Candles Row -->
+            <div class="candles-row">
+              <!-- Candle 1 -->
+              <div class="candle">
+                <div class="candle-wick"></div>
+                <div class="candle-flame lit"></div>
+              </div>
+              <!-- Candle 2 -->
+              <div class="candle">
+                <div class="candle-wick"></div>
+                <div class="candle-flame lit"></div>
+              </div>
+              <!-- Candle 3 -->
+              <div class="candle">
+                <div class="candle-wick"></div>
+                <div class="candle-flame lit"></div>
+              </div>
+            </div>
+
+            <!-- Top Cake Tier -->
+            <div class="cake-tier-top">
+              <div class="cake-frosting"></div>
+            </div>
+
+            <!-- Bottom Cake Tier -->
+            <div class="cake-tier-bottom">
+              <div class="cake-frosting"></div>
+            </div>
+
+            <!-- Plate -->
+            <div class="cake-plate"></div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="cake-actions">
+          <button id="btn-light-candles" class="btn-secondary" type="button">
+            🔥 Light the candles
+          </button>
+          <button id="btn-blow-candles" class="btn-primary" type="button">
+            Blow them out 💨🎂
+          </button>
+        </div>
+
+        <!-- Next Button -->
+        <div style="margin-top: 36px;">
+          <a href="final.html" class="btn-secondary" style="border-color: rgba(255, 209, 102, 0.4); color: var(--accent-gold);">
+            Next: One Last Surprise ➜
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Wish Popup Modal -->
+  <div class="wish-popup" id="wish-popup" role="dialog" aria-modal="true">
+    <div class="wish-card">
+      <div class="wish-icon">🌟</div>
+      <h2 class="title-display" style="font-size: 2.2rem; margin-bottom: 12px;">Wish Granted!</h2>
+      <p style="font-size: 1.15rem; color: #ffffff; line-height: 1.6; margin-bottom: 24px;">
+        May every single dream, ambition, and goal you’ve set your eyes on turn into reality this year, <strong class="friend-name">Yahya</strong>! You are destined for greatness, my brother! 🚀
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <button id="btn-close-wish" class="btn-secondary" type="button">
+          Keep Enjoying Cake 🍰
+        </button>
+        <a href="final.html" class="btn-primary">
+          See Grand Finale 🎆 ➜
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Controller Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+

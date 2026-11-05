@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Gift For Yahya 🎁</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Progress Bar (1 of 7) -->
+  <header class="progress-header">
+    <span class="progress-step-text">Surprise 1 of 7 • The Gift Box</span>
+    <div class="progress-dots">
+      <span class="progress-dot active"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+      <span class="progress-dot"></span>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <main class="page-wrapper">
+    <div class="content-container">
+      <div class="glass-card">
+        <span class="tag-badge">✨ A Special Surprise For You</span>
+        <h1 class="title-display"><span class="friend-name">Yahya</span>, I made something for you 🎁</h1>
+        <p class="subtitle">Turn up your volume 🔊 and tap the gift box to unlock your journey...</p>
+
+        <!-- 3D Interactive Gift Box -->
+        <div class="gift-box-section">
+          <div class="gift-wrapper" id="gift-box-wrapper" title="Tap to Open!">
+            <div class="gift-glow"></div>
+            <div class="gift-lid">
+              <div class="gift-bow">
+                <div class="bow-loop-left"></div>
+                <div class="bow-loop-right"></div>
+                <div class="bow-knot"></div>
+              </div>
+            </div>
+            <div class="gift-body"></div>
+          </div>
+        </div>
+
+        <div class="gift-tap-hint" id="gift-hint-text">
+          <span>👆 Tap the gift box to open</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared Controller Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
